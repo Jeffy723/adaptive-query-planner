@@ -6,7 +6,7 @@
 
 import type { ExampleQuery, PipelineResponse } from '../types/pipeline';
 
-const BASE_URL = ''; // Relative URL handled by Vite proxy in dev, direct in prod
+const BASE_URL = import.meta.env.VITE_API_URL || ''; // Relative URL handled by Vite proxy in dev, direct in prod
 
 export async function fetchHealth(): Promise<{ status: string; dataset_rows: number }> {
   const resp = await fetch(`${BASE_URL}/api/health`);
