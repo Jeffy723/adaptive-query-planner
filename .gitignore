@@ -1,0 +1,27 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Byte-compiled / optimised
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Pytest cache
+.pytest_cache/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Editor / OS artefacts
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
